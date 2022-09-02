@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+	@font-face {
+		font-family: 'Roobert-Regular';
+		src: url('../fonts/Roobert-Regular.woff2') format('woff2');
+		font-display: auto; font-style: normal; font-weight: 400; font-stretch: normal;
+	}
+
+	@font-face {
+		font-family: 'Roobert-Medium';
+		src: url('../fonts/Roobert-Medium.woff2') format('woff2');
+		font-display: auto; font-style: normal; font-weight: 500; font-stretch: normal;
+	}
+
+	@font-face {
+		font-family: 'Roobert-Bold';
+		src: url('../fonts/Roobert-Bold.woff2') format('woff2');
+		font-display: auto; font-style: normal; font-weight: 700; font-stretch: normal;
+	}
+
+}
+
+@layer components {
+
+	.container {
+		box-sizing: content-box;
+		width: auto;
+		max-width: 1200px;
+		padding-right: 20px;
+		padding-left: 20px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	@media screen and (min-width: 640px) {
+		.container {
+			padding-right: 48px;
+			padding-left: 48px;
+		}
+	}
+
+	/* Header */
+
+	.header-shadow {
+		-webkit-box-shadow: 0px 0px 80px rgba(234, 255, 255, 0.1);
+		-moz-box-shadow: 0px 0px 80px rgba(234, 255, 255, 0.1);
+		box-shadow: 0px 0px 80px rgba(234, 255, 255, 0.1);
+	}
+
+	.burger {
+		background-image: url('/src/img/misc/burger.png');
+		background-size: 30px 20px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+
+	/* Cards */
+
+	.card {
+		-webkit-box-shadow: 0px 0px 80px rgba(234, 255, 255, 0.02);
+		-moz-box-shadow: 0px 0px 80px rgba(234, 255, 255, 0.02);
+		box-shadow: 0px 0px 80px rgba(234, 255, 255, 0.02);
+	}
+
+	.card-noise {
+		background-image: url('/src/img/misc/card_noise.png');
+		background-size: 280px 202px;
+	}
+
+
+	/* Stacked cards */
+
+	.stacked-card-noise {
+		background-image: url('/src/img/stacked_cards/noise.png');
+		background-size: 1200px 480px;
+	}
+
+
+	/* Explore platform */
+
+	.explore-platform {
+		-webkit-box-shadow: 0px 0px 150px 0px #EAFFFF1A;
+		-moz-box-shadow: 0px 0px 150px 0px #EAFFFF1A;
+		box-shadow: 0px 0px 150px 0px #EAFFFF1A;
+	}
+
+	.explore-platform-noise {
+		background-image: url('/src/img/explore_platform/noise.png');
+		background-size: 720px 430px;
+	}
+
+
+	/* Tabbed cards */
+
+	.tabbed-card-noise {
+		background-image: url('/src/img/tabbed_cards/noise.png');
+		background-size: 1200px 480px;
+	}
+
+
+	/* Pre footer CTA */
+
+	.pre-footer-cta {
+		background-image: url('/src/img/pre_footer_cta/bg.png');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.pre-footer-cta-noise {
+		background-image: url('/src/img/pre_footer_cta/noise.png');
+		background-size: 1360px 467px;
+	}
+
+}
